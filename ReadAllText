@@ -1,0 +1,5 @@
+string path = @"C:\Users\....\source\repos\cascade-api-test-framework\ProductService\ProductCategory\TestData1.json";
+            string readText = File.ReadAllText(path);
+            restRequest.Resource = "productcategories";
+            restRequest.Method = Method.POST;
+            restRequest.AddJsonBody(readText);
